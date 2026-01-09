@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
         menu();
     }
     public static void menu(){
@@ -13,7 +14,6 @@ public class Main {
         while (sistemaAtivo) {
             System.out.println(" 1 - Cadastrar aluno \n 2 - Listar alunos \n 3 - Sair" );
             informe = sc.nextInt();
-
             switch (informe){
                 case 1:
                     cadastrarAlunos(controller, sc);
