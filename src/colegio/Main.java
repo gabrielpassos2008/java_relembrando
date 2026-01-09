@@ -3,14 +3,15 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        menu();
+    }
+    public static void menu(){
         AlunoController controller = new AlunoController();
+        Scanner sc = new Scanner(System.in);
         boolean sistemaAtivo = true;
         int informe;
-
-
         while (sistemaAtivo) {
-            System.out.println(" 1 - Cadastrar aluno \n2 - Listar alunos \n 3 - Sair" );
+            System.out.println(" 1 - Cadastrar aluno \n 2 - Listar alunos \n 3 - Sair" );
             informe = sc.nextInt();
 
             switch (informe){
