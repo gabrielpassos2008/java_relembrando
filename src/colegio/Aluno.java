@@ -14,8 +14,7 @@ public class Aluno {
         this.nota2 = nota2;
         this.nota3 = nota3;
     }
-
-
+    
     public void mostrarDadosCompletos(){
         System.out.println("nome do aluno:" + this.nome);
         System.out.println("idade do aluno:" + this.idade );

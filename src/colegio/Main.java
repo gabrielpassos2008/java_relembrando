@@ -26,9 +26,6 @@ public class Main {
                 default:
                     System.out.println("informe um numero da lista!!!");
             }
-            if (sistemaAtivo) {
-                System.out.println("dsad");
-            }
         }
     }
     public static void cadastrarAlunos(AlunoController controller, Scanner sc ){
@@ -37,6 +34,7 @@ public class Main {
         float nota1;
         float nota2;
         float nota3;
+
         System.out.println("informe o nome do aluno:");
         nome = sc.next();
         System.out.println("informe a idade do aluno:");
