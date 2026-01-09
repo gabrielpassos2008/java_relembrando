@@ -16,9 +16,11 @@ public class Aluno {
         this.nota3 = nota3;
         calcularMedia();
     }
+
     public void calcularMedia(){
        setMedia(((nota1 * 3)+ (nota2 * 3) + (nota3 * 4)) / 10);
     }
+
     public void mostrarDadosCompletos(){
         System.out.println("nome do aluno:" + this.nome);
         System.out.println("idade do aluno:" + this.idade );
