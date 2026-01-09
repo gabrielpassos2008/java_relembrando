@@ -6,13 +6,18 @@ public class Aluno {
     private float nota1;
     private float nota2;
     private float nota3;
+    private float media;
 
-    public Aluno(String nome, int idade,float nota1,float nota2,float nota3){
+    public Aluno(String nome, int idade, float nota1, float nota2, float nota3){
         this.nome = nome;
         this.idade = idade;
         this.nota1 = nota1;
         this.nota2 = nota2;
         this.nota3 = nota3;
+        calcularMedia();
+    }
+    public void calcularMedia(){
+       setMedia(((nota1 * 3)+ (nota2 * 3) + (nota3 * 4)) / 10);
     }
     public void mostrarDadosCompletos(){
         System.out.println("nome do aluno:" + this.nome);
@@ -20,6 +25,14 @@ public class Aluno {
         System.out.println("nota do primeiro trimestre" + this.nota1);
         System.out.println("nota do segundo trimestre" + this.nota2);
         System.out.println("nota do terceiro trimestre" + this.nota3);
+    }
+
+    public float getMedia() {
+        return media;
+    }
+
+    public void setMedia(float media) {
+        this.media = media;
     }
 
     public String getNome() {
@@ -61,6 +74,4 @@ public class Aluno {
     public void setNota3(float nota3) {
         this.nota3 = nota3;
     }
-
-
 }
